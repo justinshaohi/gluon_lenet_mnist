@@ -72,7 +72,7 @@ def predict(net):
     preds=net.forward(test_data)
 
     result=preds.argmax(axis=1).astype('int32').asnumpy()
-    print result
+    print 'predict result %s,lable %s'%(str(result),str(y))
 
 
 
